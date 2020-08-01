@@ -1,0 +1,112 @@
+@import './home';
+@import './about';
+
+.contact-hero {
+  @extend .about-hero;
+  text-transform: capitalize;
+}
+.contact-container {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+   h1 {
+    color: $mainYellow;
+    margin: 3rem;
+
+    font-size: 3rem;
+  }
+
+  form {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+    div {
+      opacity: 0.7;
+      min-width: 100%;
+      margin-right: 2rem;
+      label {
+        font-weight: 800;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        display: inline-block;
+        width: 100%;
+        margin: 0.5rem 0;
+      }
+      input {
+        padding: 1.4rem;
+        min-width: 90%;
+        font-size: 1.2rem;
+      }
+    }
+  }
+  textarea {
+    resize: none;
+    padding: 1.4rem;
+    min-width: 90%;
+    font-size: 1.2rem;
+    height: 30vh;
+    font-size: 1.4rem;
+  }
+  button {
+    @include buttonMixin();
+    margin: 2rem 0;
+    min-width: 30%;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+  
+}
+.location{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(136, 130, 130);
+  padding: 2rem;
+  div{
+  padding: 1rem;
+  text-transform: capitalize;
+  .search-icon{
+    font-size: 2rem;
+    color: $mainYellow;
+    margin-bottom: 1rem;
+  }
+  p{
+    font-size: 1.2rem;
+    color: $mainWhite;
+  }
+  }
+}
+@media screen and (max-width : 950px){
+  form{
+ 
+    margin-left: 3rem ;
+    h1{
+      width: 100%;
+    }
+    input, textarea{
+        width: 80%;
+    }
+    button{
+      min-width: 40%;
+      transform: translate(-20%);
+     
+    }
+  }
+  .map-container{
+    margin-bottom: 3rem;
+   
+  }
+  .contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .location{
+    display: flex;
+    flex-direction: column;
+  }
+}

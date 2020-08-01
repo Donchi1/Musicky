@@ -1,0 +1,138 @@
+@import './home';
+@import './About';
+
+.tracks {
+  @extend .about-hero;
+  background: url('../../MusicTools/images/guiter.jpg') center/cover no-repeat;
+  text-transform: capitalize;
+}
+.track-head {
+  font-size: 3rem;
+  text-align: center;
+  font-family: sans-serif;
+  margin: 3rem 0;
+  background: linear-gradient(rgb(26, 25, 25), rgb(250, 221, 59));
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.music-tracks {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  transform: translate(10%);
+
+  .music-single {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: 2rem 0;
+    img {
+      width: 15rem;
+    }
+    button {
+      padding: 1rem 3rem;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      margin-top: 2rem;
+      color: $mainYellow;
+      cursor: pointer;
+      transition: all 0.5s linear;
+      border: 1px solid $mainYellow;
+      outline: none;
+      &:hover {
+        background-color: rgb(27, 26, 26);
+        color: $mainWhite;
+      }
+    }
+    audio {
+      outline: none;
+    }
+    h2 {
+      color: $mainYellow;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(175, 168, 168);
+  .track-video {
+    margin: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s all ease-in-out;
+    &:hover {
+      opacity: 0.8;
+      .play-icon {
+        display: block;
+      }
+    }
+    img {
+      width: 300px;
+      height: 300px;
+    }
+    .play-icon {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transition: all 0.5s ease-in-out;
+      display: none;
+      font-size: 2.5rem;
+      color: rgb(238, 20, 20);
+    }
+  }
+}
+    .close-modal{
+    display: inline-flex;
+    justify-content: flex-end;
+    font-size: 2rem;
+    color: $mainYellow;
+    cursor: pointer;
+    font-weight: 800;
+    border: 1px solid $mainYellow;
+    &:hover {
+      background-color: red;
+      color: $mainWhite;
+    }
+  }
+
+  .testimonies-data{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    justify-items: center;
+    align-content: center;
+    margin: 3rem;
+    text-align: center;
+    grid-gap: 2rem;
+    div{
+      border: 1px solid rgba(187, 165, 66, .8);
+      padding: 1rem;
+      &:hover{
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .7);
+        opacity: .9;
+      }
+    }
+    h2{
+      font-size: 1.7rem;
+      color: $mainYellow;
+      margin: 1rem;
+    }
+    p{
+      font-size: 1.2rem;
+      opacity: .8;
+    }
+  }
+  .animate{
+    animation: move 1s linear;
+  }
+  @keyframes move{
+    from{transform: translate(50); opacity: 0}
+  }

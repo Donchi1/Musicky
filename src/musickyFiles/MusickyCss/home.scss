@@ -1,0 +1,378 @@
+$mainWhite: rgb(243, 234, 234);
+$mainGreen: rgb(72, 170, 15);
+$mainYellow: rgb(187, 165, 66);
+
+@mixin buttonMixin() {
+  border: 1px solid $mainYellow;
+   outline: none;
+  background-color: $mainYellow;
+  color: $mainWhite;
+  transition: all 0.5s linear;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  &:hover {
+    background-color: black;
+    opacity: 0.8;
+  }
+}
+
+@mixin title {
+  text-transform: capitalize;
+  font-size: 2rem;
+  color: $mainYellow;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+
+.carosel,
+.carosel1,
+.carosel2 {
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  background: url('../../MusicTools/images/slide1.jpg') center / cover no-repeat;
+  justify-content: center;
+  flex-direction: column;
+  text-transform: capitalize;
+  animation: carosel 1s linear;
+  h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    color: $mainWhite;
+    animation: 1.5s text linear;
+  }
+  h3 {
+    font-size: 2rem;
+    color: $mainGreen;
+    animation: 1.5s text linear;
+  }
+}
+
+.carosel1 {
+  background: url('../../MusicTools/images/slide.jpg') center / cover no-repeat;
+}
+.carosel2 {
+  background: url('../../MusicTools/images/slide2.jpg') center / cover no-repeat;
+}
+@keyframes carosel {
+  from {
+    opacity: 0.7;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes text {
+  from {
+    transform: translateY(-80%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.music-player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  div {
+    position: absolute;
+    img {
+      height: 8rem;
+    }
+    audio {
+      outline: none;
+    }
+    h2 {
+      position: absolute;
+      right: 6rem;
+      top: 2rem;
+      text-transform: capitalize;
+      color: $mainWhite;
+    }
+  }
+}
+.home-article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+  min-height: 80vh;
+  grid-gap: 3rem;
+  text-align: center;
+  width: 90%;
+  margin: 2rem auto;
+  img {
+    height: 60vh;
+  }
+  .home-article-header {
+    h2 {
+      @include title();
+    }
+    p {
+      font-size: 1.4rem;
+      word-wrap: break-word;
+      word-break: break-all;
+      opacity: 0.8;
+    }
+    button {
+      @include buttonMixin();
+      text-align: center;
+      margin-top: 2rem;
+      width: 30%;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.instruments {
+  background-color: rgb(44, 42, 42);
+  padding: 2rem;
+  h2 {
+    @include title();
+  }
+  .instrument-tools {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    align-content: center;
+    justify-content: center;
+    margin-left: 3rem;
+    img {
+      transition: all 0.5s linear;
+      width: 250px;
+      &:hover {
+        transform: scale(1.1);
+        opacity: 0.8;
+      }
+    }
+    p {
+      font-size: 1.2rem;
+      color: $mainWhite;
+      text-align: center;
+      &::first-letter {
+        font-size: 2rem;
+        text-transform: capitalize;
+        color: $mainYellow;
+      }
+    }
+    .icons {
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem;
+      flex-wrap: wrap;
+    }
+  }
+}
+.recent-tracts-container {
+  background-color: rgb(243, 237, 237);
+  padding-top: 2rem;
+}
+.track-title {
+  @include title();
+}
+.recent-tracts-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 25vh;
+  img {
+    width: 100px;
+    height: 200px;
+    margin: 3rem;
+  }
+  h5 {
+    color: $mainYellow;
+    margin: 1rem;
+  }
+  .player {
+    outline: none;
+    border: 1px solid $mainYellow;
+    border-radius: 2rem;
+    margin-right: 2rem;
+  }
+  button {
+    @include buttonMixin();
+    margin: 2.8rem 2rem;
+    transform: translateY(-40%);
+  }
+}
+.life-show {
+  h1 {
+    @include title();
+  }
+  .V-player {
+    margin: auto;
+    max-width: 100%;
+  }
+}
+.footer-container {
+  background-color: rgb(44, 42, 42);
+  padding: 3rem 0;
+  min-height: 90vh;
+  h1 {
+    @include title();
+    font-size: 3rem;
+  }
+
+  .footer {
+    display: flex;
+     justify-content: center;
+    
+    h2 {
+      color: $mainWhite;
+      font-size: 1.5rem;
+      text-transform: capitalize;
+      margin: 1.5rem 0;
+    }
+    .footer1 {
+      flex: 2;
+      margin-left: 2rem;
+      padding: 2rem;
+      input {
+        padding: 1.2rem;
+        background-color: transparent;
+        width: 50%;
+        color: $mainWhite;
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: groove;
+        font-size: 1.2rem;
+        &::placeholder {
+          color: $mainWhite;
+          opacity: 0.8;
+        }
+        &:focus{
+          outline-style: none;
+        }
+      }
+      button {
+        @include buttonMixin();
+        border-radius: 0;
+        width: 25%;
+        margin-left: 1rem;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+      }
+      p {
+        font-size: 1.2rem;
+        color: $mainWhite;
+        margin-top: 0.5rem;
+        text-transform: capitalize;
+      }
+    }
+  }
+  .footer2 {
+    flex: 1;
+    padding: 2rem;
+    .section1 {
+      .footer-icons {
+        color: $mainYellow;
+        font-size: 1.4rem;
+      }
+      span {
+        color: $mainWhite;
+        margin: 1.5rem 1rem;
+      }
+    }
+  }
+  a{
+      padding: 0.8rem;
+      display: inline-block;
+      margin: 2.5rem 0.5rem;
+      border-radius: 50%;
+      color: $mainWhite;
+      font-size: 1.2rem;
+      transition: all 0.5s ease-in-out;
+      &:hover{
+          color: $mainWhite;
+          opacity: 0.7;
+      }
+    }
+          .link-icons{
+          background-color: #3b5998;
+          }
+          .link-icons1{
+          background-color: #f16b6b;
+          color: rgb(245, 216, 184);
+          }
+          .link-icons2{
+          background-color: #a87a17;
+          color: rgb(245, 216, 184);
+          }
+          .link-icons3{
+          background-color: #fc241d;
+          color: rgb(245, 216, 184);
+          }
+  .reserved{
+      color: $mainWhite;
+      margin: 5rem 0 0 2rem;
+      
+  }
+  .back-to-top{
+     background-color: $mainYellow;
+     color: $mainWhite;
+      padding: 1.5rem;
+      border-radius: 1.5rem;
+      cursor: pointer;
+      position: fixed;
+      right: 1rem;
+      transition: all 0.5s linear;
+      bottom: 1rem;
+      display: none;
+      &:hover{
+         background-color: rgb(240, 213, 62);
+      }
+  }
+}
+.line {
+  width: 40%;
+  margin: 2rem auto;
+  background-color: $mainYellow;
+  padding: 0.01rem;
+}
+@media screen and (max-width : 950px){
+    .home-article{
+        display: flex;
+        flex-direction: column;
+        img{
+            margin-top: 5rem;
+        }
+    }   
+} 
+@media screen and (max-width : 950px){
+    .home-article{
+        display: flex;
+        flex-direction: column;
+        img{
+            margin-top: 5rem;
+        }
+       
+    }
+    .recent-tracts-content{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      .player{
+        margin-left: 2rem;
+      }
+    }
+    .footer-container{
+     
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+       
+       
+        .footer2{
+            margin-left: 2rem;
+            margin-top: 1rem;
+        }
+    }
+ 
+}

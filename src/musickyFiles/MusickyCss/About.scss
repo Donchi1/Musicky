@@ -1,0 +1,212 @@
+@import './home.scss';
+
+.about-hero {
+  background: url('../../MusicTools/images/About-hero.jpg') center/cover
+    no-repeat;
+    min-height: 40vh;
+
+  h1 {
+    color: $mainWhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 40vh;
+    font-size: 5rem;
+    font-weight: 700;
+  }
+}
+.overview-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+
+  .overview-text {
+    width: 50%;
+    margin: auto;
+
+    h2 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      text-transform: capitalize;
+      color: $mainYellow;
+      margin-bottom: 3rem;
+    }
+    h4 {
+      font-size: 1.6rem;
+      &::first-letter {
+        font-size: 1.8rem;
+        color: $mainYellow;
+      }
+    }
+    p {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      word-wrap: break-word;
+      opacity: 0.7;
+    }
+  }
+  .overview-button{
+
+    text-align: center;
+  button {
+    @include buttonMixin();
+    font-size: 1.2rem;
+    margin: 2rem 2rem;
+    text-transform: uppercase;
+  }
+  .btn-diff {
+    background: transparent;
+    color: $mainYellow;
+    text-align: center;
+    &:hover {
+      background-color: $mainYellow;
+      color: white;
+    }
+  }
+}
+  .overview-img {
+    width: 40%;
+    margin: 2rem;
+
+    img {
+     max-width: 100%;
+     width: 500px;
+     height: 500px;
+    }
+  }
+}
+.modal-span {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 2rem;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  color: $mainYellow;
+  &:hover {
+    opacity: 0.8;
+    color: rgb(236, 45, 45);
+  }
+}
+.modal-head {
+  @include title();
+}
+.modal-input {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  textarea {
+    resize: none;
+    border: 1px solid rgb(80, 79, 79);
+    outline: none;
+    font-size: 1.2rem;
+    min-height: 50vh;
+    width: 100%;
+    margin: auto;
+  }
+  button {
+    @include buttonMixin();
+    width: 60%;
+    margin: 1rem auto;
+    font-size: 1.2rem;
+  }
+}
+
+.history-container {
+  background-color: rgb(231, 227, 227);
+  padding-bottom: 2rem;
+  .history-content1 {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    align-items: center;
+    margin: 1.5rem auto;
+   
+    .history-img {
+      width: 40%;
+
+      img {
+        min-width: 100%;
+        width: 100%;
+        margin: 1rem 0;
+        height: 300px;
+      }
+    }
+    .history-info {
+      max-width: 100%;
+      width: 60%;
+
+      h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        color: $mainYellow;
+        margin-left: 3rem;
+        margin-top: 2rem;
+      }
+      h2 {
+        margin-left: 3rem;
+        margin-bottom: 0.3rem;
+      }
+      p {
+        letter-spacing: 0.01rem;
+        font-size: 1.4rem;
+        margin-left: 3rem;
+        opacity: 0.8;
+        
+      }
+    }
+  }
+  .history-content2,
+  .history-content3,
+  .history-content4 {
+    @extend .history-content1;
+  }
+}
+@media screen and (max-width: 950px){
+
+
+}
+@media screen and (max-width: 750px){
+    .overview-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-right: 2rem;
+        .overview-text{
+            min-width: 80%;
+            width: 70%;
+       }
+           
+       .overview-img{
+          width: 100%;
+          
+           img{
+               min-width: 300px;
+           }
+       }
+     }
+     .history-content1{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         .history-img{
+           min-width: 90%;
+         }
+         .history-info{
+           min-width: 100%;
+         }
+       
+         }
+        
+     }
+
+    
+
