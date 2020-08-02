@@ -213,6 +213,8 @@ function Tracks() {
         </div>
         </Fade>
       </section>
+      <div style={{backgroundColor: "rgb(175, 168, 168)"}}>
+      <h1 className="track-head" style={{paddingTop: "1.4rem"}}>Video Tracks</h1>
       <section className="video-container">
           <div className="track-video">
            <Fade left>
@@ -258,7 +260,7 @@ function Tracks() {
             </Zoom>
           </div>
       </section>
-     
+      </div>
 
       <Footer />
      

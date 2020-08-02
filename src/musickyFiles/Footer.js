@@ -8,12 +8,9 @@ import { FaFacebook, FaInstagram, FaYoutube, FaArrowUp, FaGooglePlusG } from 're
 
 
 function Footer() {
-
-
-    const [input, setinput] = useState("")
-    const [getData, setgetData] = useState("")
-
-
+ 
+ const [input, setinput] = useState("")
+ const [getData, setgetData] = useState("")
     
     const handleSubmit = (e) => {
        e.preventDefault()

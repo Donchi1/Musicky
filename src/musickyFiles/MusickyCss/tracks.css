@@ -1469,16 +1469,13 @@
 }
 
 .video-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #afa8a8;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  justify-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .video-container .track-video {
@@ -1546,7 +1543,7 @@
 }
 
 .testimonies-data div {
-  border: 1px solid rgba(187, 165, 66, 0.8);
+  border: 1px solid #bba542cc;
   padding: 1rem;
 }
 
@@ -1567,24 +1564,10 @@
   opacity: .8;
 }
 
-.animate {
-  -webkit-animation: move 1s linear;
-          animation: move 1s linear;
-}
-
-@-webkit-keyframes move {
-  from {
-    -webkit-transform: translate(50);
-            transform: translate(50);
-    opacity: 0;
-  }
-}
-
-@keyframes move {
-  from {
-    -webkit-transform: translate(50);
-            transform: translate(50);
-    opacity: 0;
+@media screen and (max-width: 750px) {
+  .music-tracks {
+    -webkit-transform: translate(-2%);
+            transform: translate(-2%);
   }
 }
 /*# sourceMappingURL=tracks.css.map */

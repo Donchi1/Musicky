@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect  } from 'react'
 import Zoom from 'react-reveal/Zoom'
 import Fade from 'react-reveal/Fade'
 import Rotate from 'react-reveal/Rotate'
@@ -8,6 +8,9 @@ import General from '../MusicTools/Governor/picture/audiopic.jpg'
 import Loading from './Loading'
 
 function Teams() {
+
+
+
   const [isloading, setisloading] = useState(true)
 
   useEffect(() => {

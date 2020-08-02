@@ -60,10 +60,10 @@
   }
 }
 .video-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(175, 168, 168);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  justify-items: center;
+  align-content: center;
   .track-video {
     margin: 2rem;
     cursor: pointer;
@@ -113,7 +113,7 @@
     text-align: center;
     grid-gap: 2rem;
     div{
-      border: 1px solid rgba(187, 165, 66, .8);
+      border: 1px solid #bba542cc;
       padding: 1rem;
       &:hover{
         box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .7);
@@ -130,9 +130,8 @@
       opacity: .8;
     }
   }
-  .animate{
-    animation: move 1s linear;
-  }
-  @keyframes move{
-    from{transform: translate(50); opacity: 0}
-  }
+ @media screen and (max-width: 750px){
+   .music-tracks{
+    transform: translate(-2%);
+   }
+ }
