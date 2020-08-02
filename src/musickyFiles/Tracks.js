@@ -213,8 +213,6 @@ function Tracks() {
         </div>
         </Fade>
       </section>
-      
-       <h1 className="track-head">Video Tracks</h1>
       <section className="video-container">
           <div className="track-video">
            <Fade left>
