@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
-import Zoom  from  "react-reveal/Zoom"
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Nav from './musickyFiles/Nav';
 import About from './musickyFiles/About';
 import Teams from './musickyFiles/Teams';
