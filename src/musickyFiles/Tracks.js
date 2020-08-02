@@ -242,6 +242,7 @@ function Tracks() {
           </Modal>
             </Zoom>
           </div>
+        <h1 className="track-head">Video Tracks</h1>
           <div className="track-video">
             <Fade right>
 
