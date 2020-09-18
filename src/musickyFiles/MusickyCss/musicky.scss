@@ -2,6 +2,11 @@ $primaryGray:rgb(71, 68, 68);
 $mainWhite: white;
 $mainYellow :  rgb(187, 165, 66);
 
+html{
+  overflow-x: hidden;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -108,6 +113,7 @@ header {
         padding-bottom: 2rem;
         z-index: 20;
         background-color: $primaryGray;
+        opacity: 0;
         li{
           width: 100%;  
           text-align: center;
@@ -132,11 +138,13 @@ header {
     }
     .bar{
         display: block;
+       
     }
 }
 .nav-show{
   @extend .nav-links;
   transform: translate(0);
+  opacity: 1;
   animation: show-menu 1s linear;
 }
 @keyframes show-menu {

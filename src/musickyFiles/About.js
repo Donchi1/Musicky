@@ -67,24 +67,24 @@ function About() {
                 <h2>Overview</h2>
 
                 <h4>
-                  The paramount crew is a team of young vibrant youths who's
-                  passion for music has brought great changes to many lifes.
+                  The paramount crew is a team of young vibrant youths with great
+                  passion for music, which has brought great changes to many lifes.
                 </h4>
               </Zoom>
               <Rotate bottom right>
                 <p>
                   {' '}
-                  The leader and founder is Mr Onifade Moses AKA{' '}
+                  The leader and founder is Mr Onifade Moses Olajide AKA{' '}
                   <b>Governor General</b>. we Started as a small team of young
                   singers in our local church but today our skills through God
-                  and love for music has taken us far making us one of the know
-                  musical Teams in Lagos State Nigeria. we go to places as we
-                  are invited for all kind of musics and life shows. we are also
-                  ready to teach new member that join our crew because we
-                  believe in expanssion and want to really inpact in the life of
-                  many through music. you will never regret getting in touch
-                  with us for the melody of our song will surely make you happy
-                  and elevated.
+                  and love for music has taken us far making us one of the best
+                  musicans in Ogun State, Lagos and many other states in
+                  Nigeria. we go to places as we are invited for all kind of
+                  musics, Life shows or Life performance. we are also ready to teach new member
+                  that join our crew because we believe in expanssion and want
+                  to really inpact in the life of many through music. you will
+                  never regret getting in touch with us for the melody of our
+                  song will surely make you happy and elevated.
                 </p>
               </Rotate>
               <Flip>

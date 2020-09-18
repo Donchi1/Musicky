@@ -98,11 +98,14 @@
     cursor: pointer;
     font-weight: 800;
     border: 1px solid $mainYellow;
+    opacity: 0;
     &:hover {
       background-color: red;
       color: $mainWhite;
+    
     }
   }
+  
 
   .testimonies-data{
     display: grid;
@@ -130,8 +133,30 @@
       opacity: .8;
     }
   }
- @media screen and (max-width: 750px){
+  .my-modal{
+    width: 50%;
+    position: absolute;
+    top: 28% ;
+    transform: translate(50%);
+    border: none;
+    outline: none;
+    &:hover{
+      .close-modal{
+        opacity: 1;
+      }
+    }
+  }
+                   
+  @media screen and (max-width: 750px){
    .music-tracks{
     transform: translate(-2%);
    }
- }
+
+   .my-modal{
+    max-width: 100%;
+    width: 0.1%;
+    position: absolute;
+    top: 15% ;
+
+  }
+  }

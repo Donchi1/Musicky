@@ -26,24 +26,15 @@ Modal.setAppElement('#root')
 
 function Tracks() {
 
-    const [isopen, setisopen] = useState(false)
+    const [isopen, setisopen] = useState(true)
     const [isloading, setisloading] = useState(true)
 
     useEffect(() => {setisloading(false)},[])
-
-    const defaultStyle = {
-        overlay:{
-            backgroundColor: "grey"
-        },
-        content: {
-            position: "absolute",
-            top: "15%",
-            width: "45%",
-            margin: "2rem auto",
-           
-          }
-
-    }
+   const playStyles = {
+     overlay: {
+       backgroundColor : "grey"
+     }
+   }
 
     if(isloading){
       return <Loading />
@@ -222,7 +213,7 @@ function Tracks() {
           <FaPlay className="play-icon" onClick={() => setisopen(true)}/>
           </Fade>
           <Zoom>
-          <Modal isOpen={isopen} style={defaultStyle}>
+          <Modal isOpen={isopen} className="my-modal" style={playStyles}>
             <FaTimes onClick={() => setisopen(false)} className="close-modal"/>
             <ReactPlayer url={vidio1} controls />
 
@@ -237,7 +228,7 @@ function Tracks() {
             </Fade>
             <Zoom>
 
-          <Modal isOpen={isopen} style={defaultStyle}>
+          <Modal isOpen={isopen} className="my-modal"  style={playStyles}>
             <FaTimes onClick={() => setisopen(false)} className="close-modal"/>
             <ReactPlayer url={vidio1} controls />
 
@@ -252,7 +243,7 @@ function Tracks() {
             </Fade>
             <Zoom>
 
-          <Modal isOpen={isopen} style={defaultStyle}>
+          <Modal isOpen={isopen} className="my-modal"  style={playStyles}>
             <FaTimes onClick={() => setisopen(false)} className="close-modal" />
             <ReactPlayer url={vidio1} controls />
 

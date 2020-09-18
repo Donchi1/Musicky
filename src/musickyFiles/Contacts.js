@@ -137,11 +137,12 @@ function Contacts() {
           < MdCall  className="search-icon"/>
            <p>08166608925</p>
            <p>08166608925</p>
+           <p>08148227973</p>
          </div>
        
          <div>
           < MdLocationOn  className="search-icon"/>
-           <p>Lagos state Nigeria</p>
+           <p>Ipokia Ogun state Nigeria</p>
          </div>
        
      </Zoom>

@@ -47,7 +47,7 @@ function Footer() {
             <div className="footer1">
               <h2>services</h2>
               <form onSubmit={handleSubmit}>
-              <input type="email" name="email" value={input} placeholder="Enter your email"
+              <input type="email" name="email" value={input} placeholder="Email"
 
               onChange={e => setinput(e.target.value)}
                />
@@ -65,14 +65,14 @@ function Footer() {
             </div>
             <div className="section1">
                 <MdCall  className="footer-icons"/>
-                <span> Phone: 08166608925</span>
+                <span> Phone: 08166608925 08148227973</span>
             </div>
             <div className="section1">
                 < MdLocationOn className="footer-icons"/>
-                <span>Lagos state Nigeria</span>
+                <span>Ipokia Ogun state Nigeria</span>
             </div>
             <a href="https://www.facebook.com/govgeneralcrew" target="_blank" rel="noopener noreferrer" className="link-icons"><FaFacebook /></a>
-            <a href="https:www.governorgeneral1993@gmail.com" target="_blank" rel="noopener noreferrer" className="link-icons1"><FaGooglePlusG /></a>
+            <a href="mailto:governorgeneral1993@gmail.com" target="_blank" rel="noopener noreferrer" className="link-icons1"><FaGooglePlusG /></a>
             <a href="https://instagram.com/governor_general1?igshid=e6pk3a1lehc1" target="_blank" rel="noopener noreferrer" className="link-icons2" ><FaInstagram /> </a>
             <a href="https://www.youtube.com/channel/UCX0M4AoxSBGfD-ql2-MJ_CQ" target="_blank" rel="noopener noreferrer" className="link-icons3"><FaYoutube /></a>
             </div>

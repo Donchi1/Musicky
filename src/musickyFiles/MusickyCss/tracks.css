@@ -486,7 +486,7 @@
   border-radius: 1.5rem;
   cursor: pointer;
   position: fixed;
-  right: 1rem;
+  right: 1.2rem;
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
   bottom: 1rem;
@@ -502,21 +502,6 @@
   margin: 2rem auto;
   background-color: #bba542;
   padding: 0.01rem;
-}
-
-@media screen and (max-width: 950px) {
-  .home-article {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .home-article img {
-    margin-top: 5rem;
-  }
 }
 
 @media screen and (max-width: 950px) {
@@ -553,10 +538,23 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer .footer1 {
+    width: 100%;
+  }
+  .footer .footer1 input {
+    margin: 1rem;
   }
   .footer .footer2 {
     margin-left: 2rem;
     margin-top: 1rem;
+    width: 100%;
   }
 }
 
@@ -1028,7 +1026,7 @@
   border-radius: 1.5rem;
   cursor: pointer;
   position: fixed;
-  right: 1rem;
+  right: 1.2rem;
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
   bottom: 1rem;
@@ -1044,21 +1042,6 @@
   margin: 2rem auto;
   background-color: #bba542;
   padding: 0.01rem;
-}
-
-@media screen and (max-width: 950px) {
-  .home-article {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .home-article img {
-    margin-top: 5rem;
-  }
 }
 
 @media screen and (max-width: 950px) {
@@ -1095,10 +1078,23 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer .footer1 {
+    width: 100%;
+  }
+  .footer .footer1 input {
+    margin: 1rem;
   }
   .footer .footer2 {
     margin-left: 2rem;
     margin-top: 1rem;
+    width: 100%;
   }
 }
 
@@ -1522,6 +1518,7 @@
   cursor: pointer;
   font-weight: 800;
   border: 1px solid #bba542;
+  opacity: 0;
 }
 
 .close-modal:hover {
@@ -1564,10 +1561,30 @@
   opacity: .8;
 }
 
+.my-modal {
+  width: 50%;
+  position: absolute;
+  top: 28%;
+  -webkit-transform: translate(50%);
+          transform: translate(50%);
+  border: none;
+  outline: none;
+}
+
+.my-modal:hover .close-modal {
+  opacity: 1;
+}
+
 @media screen and (max-width: 750px) {
   .music-tracks {
     -webkit-transform: translate(-2%);
             transform: translate(-2%);
+  }
+  .my-modal {
+    max-width: 100%;
+    width: 0.1%;
+    position: absolute;
+    top: 15%;
   }
 }
 /*# sourceMappingURL=tracks.css.map */

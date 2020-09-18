@@ -10,7 +10,7 @@
   justify-content: center;
   width: 90%;
   margin: 0 auto;
-   h1 {
+  h1 {
     color: $mainYellow;
     margin: 3rem;
 
@@ -18,10 +18,10 @@
   }
 
   form {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     div {
       opacity: 0.7;
       min-width: 100%;
@@ -56,56 +56,53 @@
     font-size: 1.2rem;
     text-transform: uppercase;
   }
-  
 }
-.location{
+.location {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+
   text-align: center;
   background-color: rgb(136, 130, 130);
   padding: 2rem;
-  div{
-  padding: 1rem;
-  text-transform: capitalize;
-  .search-icon{
-    font-size: 2rem;
-    color: $mainYellow;
-    margin-bottom: 1rem;
-  }
-  p{
-    font-size: 1.2rem;
-    color: $mainWhite;
-  }
+  div {
+    padding: 1rem;
+    text-transform: capitalize;
+    .search-icon {
+      font-size: 2rem;
+      color: $mainYellow;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.2rem;
+      color: $mainWhite;
+    }
   }
 }
-@media screen and (max-width : 950px){
-  form{
- 
-    margin-left: 3rem ;
-    h1{
+@media screen and (max-width: 950px) {
+  form {
+    margin-left: 3rem;
+    h1 {
       width: 100%;
     }
-    input, textarea{
-        width: 80%;
+    input,
+    textarea {
+      width: 80%;
     }
-    button{
+    button {
       min-width: 40%;
       transform: translate(-20%);
-     
     }
   }
-  .map-container{
+  .map-container {
     margin-bottom: 3rem;
-   
   }
-  .contact-container{
+  .contact-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
-  .location{
+  .location {
     display: flex;
     flex-direction: column;
   }

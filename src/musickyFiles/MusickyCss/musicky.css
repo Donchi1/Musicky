@@ -139,6 +139,7 @@ header .bar:hover {
     padding-bottom: 2rem;
     z-index: 20;
     background-color: #474444;
+    opacity: 0;
   }
   header .nav-links li, header .nav-show li {
     width: 100%;
@@ -164,6 +165,7 @@ header .bar:hover {
 header .nav-show {
   -webkit-transform: translate(0);
           transform: translate(0);
+  opacity: 1;
   -webkit-animation: show-menu 1s linear;
           animation: show-menu 1s linear;
 }

@@ -486,7 +486,7 @@
   border-radius: 1.5rem;
   cursor: pointer;
   position: fixed;
-  right: 1rem;
+  right: 1.2rem;
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
   bottom: 1rem;
@@ -502,21 +502,6 @@
   margin: 2rem auto;
   background-color: #bba542;
   padding: 0.01rem;
-}
-
-@media screen and (max-width: 950px) {
-  .home-article {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .home-article img {
-    margin-top: 5rem;
-  }
 }
 
 @media screen and (max-width: 950px) {
@@ -553,6 +538,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .footer .footer1 input {
+    margin-right: 1.2rem;
   }
   .footer .footer2 {
     margin-left: 2rem;

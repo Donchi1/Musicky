@@ -353,22 +353,27 @@ $mainYellow: rgb(187, 165, 66);
         margin-left: 2rem;
       }
     }
-   
+    
     .footer{
         display: flex;
         flex-direction: column;
-        
+        justify-content: center;
+        align-items: center;
         .footer1{
+          width: 100%;
           input{
-           
-            margin-right: 1.3rem;
+            margin: 1rem;
+          
           }
+        
         }
        
         .footer2{
             margin-left: 2rem;
             margin-top: 1rem;
+            width: 100%;
         }
     }
  
 }
+
